@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: #e5e5e5;
+    
 }
 
 .frame .main_frame{
@@ -106,7 +107,8 @@ margin-bottom: 29.46px;
     height: 0px;
     margin-left: 40px;
     margin-bottom: 25px;
-    margin-top: 39px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     /* background */
     border: 1.5px solid #f0f0f6;
 }
@@ -150,32 +152,409 @@ margin-bottom: 29.46px;
     width: 221px;
     height: 126px;
     margin-left: 44px;
-    background-color: aqua;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
-.main_frame .left_frame .left_3{
-    position: relative;
-    width: 220px;
-    height: 153px;
-    margin-top: 25px;
-    margin-left: 45px;
-    background-color: aqua;
+/* .main_frame .left_2 .left_2-2{
+    display: flex;
+    flex-direction: column; 
+} */
+
+.main_frame .left_2 .left_2-2 #rect{
+display: flex;
+flex-direction: row;
+margin-top: 8px;
 }
+.main_frame .left_2 .left_2-2 .age{
+width: 221px;
+height: 25px;
+flex-shrink: 0;
+justify-content: space-between;
+margin-top: 0px !important;
+}
+.main_frame .left_2 .left_2-2 .age .rectangle_1{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 46.209px;
+height: 24px;
+flex-shrink: 0;
+background: #FFB400;
+}
+
+.left_2-2 p{
+    margin: 0px;
+}
+
+.main_frame .left_2 .left_2-2  .residence{
+width: 220px;
+height: 24px;
+flex-shrink: 0;
+justify-content: space-between;
+}
+
+.main_frame .left_2 .left_2-2 .rectangle_2{
+width: 89px;
+height: 24px;
+flex-shrink: 0;
+background: #FFB400;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main_frame .left_2 .left_2-2  .freelance{
+width: 220px;
+height: 24px;
+flex-shrink: 0;
+justify-content: space-between;
+}
+
+.main_frame .left_2 .left_2-2 .rectangle_3{
+width: 85px;
+height: 24px;
+flex-shrink: 0;
+background: #FFB400;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main_frame .left_2 .left_2-2  .address{
+width: 220px;
+height: 24px;
+flex-shrink: 0;
+justify-content: space-between;
+}
+
+.main_frame .left_2 .left_2-2 .rectangle_4{
+width: 75px;
+height: 24px;
+flex-shrink: 0; 
+background: #FFB400;
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+
+
+.main_frame .left_frame .left_3{
+position: relative;
+width: 220px;
+height: 153px;
+/* margin-top: 25px; */
+margin-left: 45px;
+}
+
+.main_frame .left_3 .left_3-3 h4{
+margin: 0px;
+color: #2B2B2B;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 123.6%; /* 22.248px */
+text-transform: capitalize;
+font-family: inter;
+}
+
+.main_frame .left_3 .left_3-3{
+display: flex;
+flex-direction: column;
+/* margin-top: 8px; */
+}
+.main_frame .left_3 .left_3-3 .lang1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:8px;
+margin-bottom: 0px;
+width: 220px;
+height: 24px;
+}
+.lang1 .english{
+color: var(--Paragraph-Font, #767676);
+height: 24px;
+width: 15px;
+margin: 0px;
+padding: 0px;
+}
+
+.lang1 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.main_frame .left_3 .left_3-3 .lang2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 219px;
+    height: 24px;
+    margin-top: 8px;
+}
+.lang2 .russian{
+    color: var(--Paragraph-Font, #767676);
+    height: 30px;
+    width: 24px;
+    margin: 0px;
+    }
+
+.lang2 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+ /* Paragraph Progress - 15 */
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 160% */
+text-transform: capitalize;
+margin: 0px;
+}
+
+
+.main_frame .left_3 .left_3-3 .lang3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 219px;
+    height: 24px;
+    margin-top: 8px;
+   
+}
+
+.main_frame .left_3 .left_3-3 .lang3 .korean{
+color: var(--Paragraph-Font, #767676);
+height: 30px;
+width: 24px;
+margin: 0px;
+}
+
+.lang3 .percent{
+    color: var(--Paragraph-Font, #767676);
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+     /* Paragraph Progress - 15 */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    text-transform: capitalize;
+    margin: 0px;
+    }
 
 .main_frame .left_frame .left_4{
     position: relative;
     width: 220px;
     height: 252px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     margin-left: 45px;
-    background-color: aqua;
+}
+.main_frame .left_4 .left_4-4{
+display: flex;
+flex-direction: column;
+}
+
+.main_frame .left_4 .left_4-4 h4{
+    margin: 0px;
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.6%; /* 22.248px */
+    text-transform: capitalize;
+    font-family: inter;
+    }
+
+.main_frame .left_4 .left_4-4 .skill1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:8px;
+    margin-bottom: 0px;
+    width: 220px;
+    height: 24px;
+    }
+
+    .skill1 .html{
+        color: var(--Paragraph-Font, #767676);
+        height: 24px;
+        width: 15px;
+        margin: 0px;
+        padding: 0px;
+        }
+        
+        .skill1 .percent{
+        color: var(--Paragraph-Font, #767676);
+        font-kerning: none;
+        font-feature-settings: 'calt' off;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin: 0px;
+        }
+
+
+.main_frame .left_4 .left_4-4 .skill2{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:8px;
+margin-bottom: 0px;
+width: 220px;
+height: 24px;
+}        
+.skill2 .css{
+color: var(--Paragraph-Font, #767676);
+height: 24px;
+width: 15px;
+margin: 0px;
+padding: 0px;
+}
+            
+.skill2 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.main_frame .left_4 .left_4-4 .skill3{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:8px;
+margin-bottom: 0px;
+width: 220px;
+height: 24px;
+}        
+.skill3 .js{
+color: var(--Paragraph-Font, #767676);
+height: 24px;
+width: 15px;
+margin: 0px;
+padding: 0px;
+}
+                
+.skill3 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+margin: 0px;
+}
+
+
+.main_frame .left_4 .left_4-4 .skill4{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:8px;
+margin-bottom: 0px;
+width: 220px;
+height: 24px;
+}        
+.skill4 .php{
+color: var(--Paragraph-Font, #767676);
+height: 24px;
+width: 15px;
+margin: 0px;
+padding: 0px;
+}
+                    
+.skill4 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.main_frame .left_4 .left_4-4 .skill5{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top:8px;
+margin-bottom: 0px;
+width: 220px;
+height: 24px;
+}        
+.skill5 .wordpress{
+color: var(--Paragraph-Font, #767676);
+height: 24px;
+width: 15px;
+margin: 0px;
+padding: 0px;
+}
+                        
+.skill5 .percent{
+color: var(--Paragraph-Font, #767676);
+font-kerning: none;
+font-feature-settings: 'calt' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+margin: 0px;
 }
 
 .main_frame .left_frame .left_5{
-    position: relative;
-    width: 186px;
-    height: 148px;
-    margin-top: 25px;
-    margin-left: 45px;
-    background-color: aqua;
+position: relative;
+width: 186px;
+height: 148px;
+margin-left: 45px;
+display: flex;
+flex-direction: column;
+}
+.left_5 .left_5-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.left_5 h4 {
+    margin: 0px;
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.6%; /* 22.248px */
+    text-transform: capitalize;
+    font-family: inter;
+    margin-bottom: 8px;
+}
+
+.quadre {
+    margin-right: 10px;
 }
