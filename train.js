@@ -1,12 +1,12 @@
-// console.log("Jack Ma maslahatlari");
-// const list =[
-//     "Yaxshi talaba boling", // 0-20
-//     "Togri boshliq tanlang va koproq xato qiling", // 20-30
-//     "Uzingizni ishingizni boshlang", // 30-40
-//     "Siz kuchli bolgan narsalarni qiling", // 40-50
-//     "Yoshlarga investitsiya qiling", // 50-60
-//     "Endi dam oling foydasi yoq" // 60
-// ]
+console.log("Jack Ma maslahatlari");
+const list =[
+    "Yaxshi talaba boling", // 0-20
+    "Togri boshliq tanlang va koproq xato qiling", // 20-30
+    "Uzingizni ishingizni boshlang", // 30-40
+    "Siz kuchli bolgan narsalarni qiling", // 40-50
+    "Yoshlarga investitsiya qiling", // 50-60
+    "Endi dam oling foydasi yoq" // 60
+]
 
 // callback
 // function maslahatBering (a, callback) {
@@ -36,20 +36,21 @@
 
 
 // Async function
-// async function maslahatBering (a) {
-//     if (typeof a !== "number") throw new Error ("insert a number");
-//     else if (a <=20) return list[0];
-//     else if (a > 20 && a <= 30 ) return list[1];
-//     else if (a > 30 && a <= 40 ) return list[2];
-//     else if (a > 40 && a <= 50 ) return list[3];
-//     else if (a > 50 && a <= 60 ) return list[4];
-//     else{
-//         return new Promise ((resolve, reject) => {
- //       setTimeout(function () {
- //           callback(null, list[5]);
- //       }, 3000)    
- //   }
- // }
+async function maslahatBering (a) {
+    if (typeof a !== "number") throw new Error ("insert a number");
+    else if (a <=20) return list[0];
+    else if (a > 20 && a <= 30 ) return list[1];
+    else if (a > 30 && a <= 40 ) return list[2];
+    else if (a > 40 && a <= 50 ) return list[3];
+    else if (a > 50 && a <= 60 ) return list[4];
+    else{
+        return new Promise ((resolve, reject) => {
+       setTimeout( () => {
+           resolve(list[5]);
+       }, 3000);
+      }); 
+   }
+  }
 
 
 
@@ -67,32 +68,31 @@
 
 
 
-// async function run(){
-//     let javob = await maslahatBering(65);
-//     console.log(javob);
-//     javob = await maslahatBering(70);
-//     console.log(javob);
-//     javob = await maslahatBering(50);
-//     console.log(javob);
+async function run(){
+    let javob = await maslahatBering(65);
+    console.log(javob);
+    javob = await maslahatBering(70);
+    console.log(javob);
+    javob = await maslahatBering(50);
+    console.log(javob);
 
-// }
-// run();
+}
+run();
 
 
 
 // A-TASK
-const harf = 'b';
-const soz = 'berib boldi';
+// const harf = 'b';
+// const soz = 'berib boldi';
 
-function harfTopish(harf, soz) {
-    let soni = 0;
-    for (let i = 0; i < soz.length; i++) {
-      if (soz[i] === harf) {
-        soni++;
-      }
-    }
-    return soni;
-  } 
-  const javob = harfTopish(harf, soz);
-  console.log("javob:", javob); 
-  
+// function harfTopish(harf, soz) {
+//     let soni = 0;
+//     for (let i = 0; i < soz.length; i++) {
+//       if (soz[i] === harf) {
+//         soni++;
+//       }
+//     }
+//     return soni;
+//   } 
+//   const javob = harfTopish(harf, soz);
+//   console.log("javob:", javob); 
