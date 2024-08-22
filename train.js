@@ -26,7 +26,7 @@ const list =[
 // }
 
 // console.log('passed here 0');
-// maslahatBering(70, (err, data) => {
+// maslahatBering(61, (err, data) => {
 //     if (err) console.log("ERROR:", err);
 //     else{
 //         console.log(data);
@@ -52,18 +52,16 @@ async function maslahatBering (a) {
    }
   }
 
-
-
 // call via then/catch
-// console.log("passed here 0");
-// maslahatBering(20)
-// .then(data => {
-//     console.log('Javob:', data);
-// })
-// .catch(err => {
-//     console.log("ERROR:", err);
-// });
-// console.log("passed here 1");
+console.log("passed here 0");
+maslahatBering(20)
+.then(data => {
+    console.log('Javob:', data);
+})
+.catch(err => {
+    console.log("ERROR:", err);
+});
+console.log("passed here 1");
 
 
 
