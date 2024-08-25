@@ -95,20 +95,33 @@
 //   const javob = harfTopish(harf, soz);
 //   console.log("javob:", javob); 
 
+
+
 // B-Task 
 
 
-
-
-function countDigits(str) {
-    let soni = 0;
-    for (let i = 0; i < str.length; i++) {
-      if (!isNaN(str[i]) && str[i] !== ' ') {
-        soni++;
-      }
-    }
-    return soni;
-  }
+// function countDigits(str) {
+//     let soni = 0;
+//     for (let i = 0; i < str.length; i++) {
+//       if (!isNaN(str[i]) && str[i] !== ' ') {
+//         soni++;
+//       }
+//     }
+//     return soni;
+//   }
   
-  const javob = countDigits("a7sdfg23a45sdf94jw0h");
-  console.log("javob:", javob);
+//   const javob = countDigits("a7sdfg23a45sdf94jw0h");
+//   console.log("javob:", javob);
+
+
+//C-Task
+let gap1 = "mitgroup16";
+let gap2 = "itm1rgoup6";
+function checkContent(gap1, gap2) {
+    let qolipGap1 = gap1.toLowerCase().split('').sort().join('');
+    let qolipGap2 = gap2.toLowerCase().split('').sort().join('');
+
+   return qolipGap1 === qolipGap2 ;
+
+}
+console.log(checkContent(gap1, gap2));
