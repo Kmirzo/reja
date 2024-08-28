@@ -115,13 +115,53 @@
 
 
 //C-Task
-let gap1 = "mitgroup16";
-let gap2 = "itm1rgoup6";
-function checkContent(gap1, gap2) {
-    let qolipGap1 = gap1.toLowerCase().split('').sort().join('');
-    let qolipGap2 = gap2.toLowerCase().split('').sort().join('');
+// let gap1 = "mitgroup16";
+// let gap2 = "itm1rgoup6";
+// function checkContent(gap1, gap2) {
+//     let qolipGap1 = gap1.toLowerCase().split('').sort().join('');
+//     let qolipGap2 = gap2.toLowerCase().split('').sort().join('');
 
-   return qolipGap1 === qolipGap2 ;
+//    return qolipGap1 === qolipGap2 ;
 
+// }
+// console.log(checkContent(gap1, gap2));
+
+// D-Tasl
+
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.products = {
+            non: non,
+            lagmon: lagmon,
+            cola: cola
+        };
+    }
+    _getTime() {
+        const date = new Date();
+         const hours = date.getHours(); 
+        const minutes = date.getMinutes(); 
+        return `${hours}:${minutes}`;
+    }
+
+    sotish(mahsulot, miqdor) {
+        if (this.products[mahsulot] >= miqdor) {
+            this.products[mahsulot] -= miqdor;
+            console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
+        } else {
+            console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
+        }
+    }
+    qoldiq() {
+        console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
+    }
+     qabul(mahsulot, miqdor) {
+        this.products[mahsulot] += miqdor;
+        console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
+    }
 }
-console.log(checkContent(gap1, gap2));
+
+const shop = new Shop(4, 5, 2);
+shop.qoldiq(); 
+shop.sotish('nom' , 3); 
+shop.qabul('cola' , 12); 
+    shop.qoldiq();
