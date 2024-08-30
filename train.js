@@ -126,42 +126,57 @@
 // }
 // console.log(checkContent(gap1, gap2));
 
-// D-Tasl
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.products = {
-            non: non,
-            lagmon: lagmon,
-            cola: cola
-        };
-    }
-    _getTime() {
-        const date = new Date();
-         const hours = date.getHours(); 
-        const minutes = date.getMinutes(); 
-        return `${hours}:${minutes}`;
-    }
 
-    sotish(mahsulot, miqdor) {
-        if (this.products[mahsulot] >= miqdor) {
-            this.products[mahsulot] -= miqdor;
-            console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
-        } else {
-            console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
-        }
+// D-Task
+
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.products = {
+//             non: non,
+//             lagmon: lagmon,
+//             cola: cola
+//         };
+//     }
+//     _getTime() {
+//         const date = new Date();
+//          const hours = date.getHours(); 
+//         const minutes = date.getMinutes(); 
+//         return `${hours}:${minutes}`;
+//     }
+
+//     sotish(mahsulot, miqdor) {
+//         if (this.products[mahsulot] >= miqdor) {
+//             this.products[mahsulot] -= miqdor;
+//             console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
+//         } else {
+//             console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
+//         }
+//     }
+//     qoldiq() {
+//         console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
+//     }
+//      qabul(mahsulot, miqdor) {
+//         this.products[mahsulot] += miqdor;
+//         console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
+//     }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq(); 
+// shop.sotish('nom' , 3); 
+// shop.qabul('cola' , 12); 
+//     shop.qoldiq();
+
+
+// E-Task
+
+function reverseString(str) {
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
     }
-    qoldiq() {
-        console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
-    }
-     qabul(mahsulot, miqdor) {
-        this.products[mahsulot] += miqdor;
-        console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
-    }
+    return newString;
 }
+console.log(reverseString('"annyong"'));
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq(); 
-shop.sotish('nom' , 3); 
-shop.qabul('cola' , 12); 
-    shop.qoldiq();
