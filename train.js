@@ -171,12 +171,30 @@
 
 // E-Task
 
-function reverseString(str) {
-    let newString = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += str[i];
-    }
-    return newString;
-}
-console.log(reverseString('"annyong"'));
+// function reverseString(str) {
+//     let newString = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         newString += str[i];
+//     }
+//     return newString;
+// }
+// console.log(reverseString('"annyong"'));
+
+
+// F - task
+
+let soz = "Welldone"; 
+let harf = "l"
+
+    function findDoublers(soz, harf) {
+        if ( soz.indexOf(harf) !== soz.lastIndexOf(harf)) {
+            return true;
+        } else {
+            return false;
+        };
+       
+    };
+    console.log(findDoublers(soz, harf));
+
+
 
